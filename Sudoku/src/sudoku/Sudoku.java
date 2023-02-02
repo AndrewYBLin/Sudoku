@@ -220,7 +220,7 @@ public class Sudoku extends JFrame{
     }
     }
     
-    /** The main method which calls the Sudoku constructor to make a game. 
+    /** The main method runs the Sudoku game. 
      * @param args  
      */
     public static void main(String[] args) {   
