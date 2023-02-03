@@ -109,7 +109,7 @@ public class Sudoku extends JFrame{
      * 
      */
     public Sudoku(){ 
-        //setuserInput(1); 
+        setuserInput(0); 
         buttonGrid = new Button[ROWS][COLS];
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setVisible(true);
