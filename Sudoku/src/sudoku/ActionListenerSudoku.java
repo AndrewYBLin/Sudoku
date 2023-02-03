@@ -30,11 +30,14 @@ public class ActionListenerSudoku implements ActionListener{
             
             Button button  = (Button)ae.getSource();
             if (button.getshowBool() == false && game.getgameWin() == false){
-                    button.setText(String.valueOf(game.getuserInput())); 
+                    if(game.getuserInput() != 0){
+                        button.setText(String.valueOf(game.getuserInput())); 
                     //button.displayVal = game.getuserInput(); 
-                    button.setdisplayVal(game.getuserInput());
-                    game.checkWin(game); 
-                    game.gameWon(game);
+                        button.setdisplayVal(game.getuserInput());
+                        game.checkWin(game); 
+                        game.gameWon(game);
+                    }
+                    
             }
         
         }if (ae.getSource() instanceof ButtonPad){
