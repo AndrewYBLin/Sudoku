@@ -127,7 +127,7 @@ public class Sudoku extends JFrame{
         ThreeByThree.setBorder(BorderFactory.createLineBorder(Color.black));
         
         JPanel buttonPadGrid = new JPanel(); 
-        buttonPadGrid.setLayout(new GridLayout(9,1)); 
+        buttonPadGrid.setLayout(new GridLayout(3,3)); 
         buttonPadGrid.setBorder(BorderFactory.createLineBorder(Color.black)); 
         ActionListenerSudoku ALS = new ActionListenerSudoku(this); 
          for (int k = 1; k < 10; k++){
